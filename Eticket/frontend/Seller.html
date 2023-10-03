@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script src="./block.js"></script>
+      <link rel="stylesheet" type="text/css" href="./CreateTicket.css">
+   </head>
+   <body>
+      
+      <table align="center">
+         <tr>
+            <td>
+               
+                  <div class="container">
+                     <h3 align="center">Create Ticket</h3>
+                     <div class="user-input-box">
+                        <label>Price</label>
+                        <input type="text" id="price" placeholder="Enter Price...">
+                     </div>
+                     <div class="user-input-box">
+                        <label>Deprture Time</label>
+                        <input type="text" id="dtime" placeholder="Enter Deprture Time...">
+                     </div>
+                     <div class="user-input-box">
+                        <label>Arrival Time</label>
+                        <input type="text" id="atime" placeholder="Enter Arrival Time...">
+                     </div>
+                     <div class="user-input-box">
+                        <label>Source</label>
+                        <input type="text" id="src" placeholder="Enter Source...">
+                     </div>
+                     <div class="user-input-box">
+                        <label>Destination</label>
+                        <input type="text" id="dst" placeholder="Enter Destination...">
+                     </div>
+                     <button id="create" class="button" onclick="createTicket()">Create</button>
+                  </div>
+               
+            </td>
+           
+         </tr>
+       
+         <tr>
+            <td>
+               <button id="connect" class="button" onclick="Connect()">Connect</button>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

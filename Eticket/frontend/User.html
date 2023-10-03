@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script src="./block.js"></script>
+      <link rel="stylesheet" type="text/css" href="./CreateTicket.css">
+   </head>
+   <body>
+      
+      <table align="center">
+         <tr>
+            
+            <td>
+               
+                  <div class="container" id="rtr">
+                     <h3 align="center">Get Ticket Details</h3>
+                     <div class="user-input-box">
+                        <label>Ticket id</label>
+                        <input type="text" id="tid" placeholder="Enter Ticket ID...">
+                     </div>
+                  <div class="user-input-box">
+                     <label>Decription Key</label>
+                     <input type="text" id="dkey" placeholder="Enter Decription Key...">
+                  </div>
+                  <button id="getdetails" class="button" onclick="getDetails()">Get Details</button>
+                  </div>   
+                  
+            </td>
+         </tr>
+         <tr>
+            <td>
+          
+                  <div class="container">
+                     <h3 align="center">Buy Ticket</h3>
+                     <div class="user-input-box">
+                        <label>Ticket id</label>
+                        <input type="text" id="btid" placeholder="Enter Ticket ID...">                     
+                     </div>
+                     <button id="buy" class="button" onclick="buyTicket()">Buy ticket</button>
+                  </div>
+              
+            </td>
+            <td>
+          
+                  <div class="container">
+                     <h3 align="center">Refund Ticket</h3>
+                     <div class="user-input-box">
+                        <label>Ticket id</label>
+                        <input type="text" id="rtid" placeholder="Enter Ticket ID...">                          
+                     </div>
+                     <button id="refundTicket" class="button" onclick="refundTicket()">Refund ticket</button>
+                  </div>
+              
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <button id="connect" class="button" onclick="Connect()">Connect</button>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
